@@ -48,6 +48,7 @@ router.post('/adduser', function(req, res) {
 		if(err) {
 			res.send("Error adding to database.");
 		} else {
+			// On successful new entry to DB redirect to userlist page :)
 			res.redirect("userlist");
 		}
 	});
